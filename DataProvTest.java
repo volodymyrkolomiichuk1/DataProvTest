@@ -13,7 +13,7 @@ public class DataProvTest {
     @DataProvider(name = "dp")
     public Object[][] parseData() {
         return new Object[][] {
-                {"https://google.com"},
+                {"https://yahoo.com"},
         {"https://duckduckgo.com"}
         };
     }
