@@ -13,7 +13,7 @@ public class DataProvTest {
     @DataProvider(name = "dp")
     public Object[][] parseData() {
         return new Object[][] {
-                {"https://google.com"},
+                {"https://yahoo.com"},
         {"https://duckduckgo.com"}
         };
     }
@@ -28,7 +28,7 @@ public class DataProvTest {
     private void test(String searchUrl) throws InterruptedException {
         driver.get(searchUrl);
         WebElement element = driver.findElement(By.xpath(".//*[@name='q']"));
-        element.sendKeys("Selenium");
+        element.sendKeys("git merge vs rebase");
         element.submit();
         Thread.sleep(3_000);
         System.out.println("Page title is: " + driver.getTitle());
